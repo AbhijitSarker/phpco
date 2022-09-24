@@ -9,9 +9,25 @@
 <body>
     <h1>for loop in php</h1>
     <?php 
-        for($a=1; $a<=5; $a++){
+       /* for($a=1; $a<=5; $a++){
             echo $a;
-        }
+        }*/
+       /* $a=1;
+        while($a<=10){
+            echo $a;
+            $a++;
+        }*/
+
+        $a = 1;
+        do {
+            echo $a;
+            $a++;
+        
+        } while($a<=10);
+        
+
+
+
     ?>
 </body>
 </html>
