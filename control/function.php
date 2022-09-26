@@ -9,20 +9,26 @@
 // familyName("Kai Jim");
 // familyName("Borge");
 
-function abc($i){
+// function abc($i){
 
-  $i ="php";
+//   $i ="php";
+// }
+// $hi = "php5";
+// abc($hi);
+// echo $hi;
+
+// function xyz(&$a){
+//   $a="php";
+// }
+// $hello="this is php 5";
+// xyz($hello);
+// echo $hello;
+
+
+function abc($num1, $num2){
+  $num3 = $num1 + $num2;
+  return $num3;
 }
-$hi = "php5";
-abc($hi);
-echo $hi;
-
-function xyz(&$a){
-  $a="php";
-}
-$hello="this is php 5";
-xyz($hello);
-echo $hello;
-
-
+$a = abc(9,10);
+echo "the value after adding the function $a";
 ?>
