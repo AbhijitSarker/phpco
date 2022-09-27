@@ -1,3 +1,39 @@
+<?php 
+    if($_POST && isset($_POST["send"],$_POST["name"], $_POST["email"], $_POST["subject"], $_POST["messege"] ))
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $subject = $_POST["subject"];
+    $messege = $_POST["messege"];
+
+    if(!$name){
+        $error_msg = "must enter your name";
+    }
+    elseif(!$email){
+        $error_msg = "must enter your email";
+    }
+    elseif(!$messege){
+        $error_msg = "must enter your messege";
+    }
+    else{
+        $to = "example@gmail.com";
+        if(!$subject) $subject = "contact form";
+        $header = "form: webmaster@gmail.com";
+        mail($to, $subject, $messege, $header);
+        header("location: https://www.google.com");
+        exit;
+    }
+
+
+
+
+
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
