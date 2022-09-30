@@ -1,6 +1,11 @@
 <?php 
 
+    $nameErr = $emailErr  = $genderErr = $website = "";
+    $name = $email = $gender = $comment = $website = "";
 
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+        
+    }
 
 ?>
 
