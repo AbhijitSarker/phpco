@@ -102,5 +102,21 @@
      
 // This code is contributed by ash264
 
+function is_leap_year($year){
+  if($year % 400 == 0){
+
+    echo "this is leap year";
+  }
+  elseif($year % 100 == 0){
+    echo "this is not leap year";
+  }
+  elseif($year % 4){
+    echo "this is leap year";
+  }
+  else{
+    echo "this is not leap year";
+  }
+}
+
 
 ?>
