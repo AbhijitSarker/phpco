@@ -16,7 +16,7 @@
 <body>
     <h1>Student Information Form</h1>
 
-    <form action="">
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
         Name: <input type="text" name="name">
         E-mail: <input type="text" name="email">
         Website: <input type="text" name="website">
@@ -27,7 +27,7 @@
                <input type="radio" name="gender" value="other">Other
 
 
-    </form>
+    </form> 
     
 </body>
 </html>
