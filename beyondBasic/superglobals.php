@@ -9,6 +9,15 @@ function addition() {
 addition();
 echo $z;
 ?>
+<!-- $GLOBALS
+$_SERVER
+$_REQUEST
+$_POST
+$_GET
+$_FILES
+$_ENV
+$_COOKIE
+$_SESSION -->
 
 <?php
 echo $_SERVER['PHP_SELF'];
