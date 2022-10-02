@@ -17,6 +17,50 @@
     //   echo "<br>";
     // }
 
+    function checkYear($year)
+    {
+      // If a year is multiple of 400,
+      // then it is a leap year
+      if ($year % 400 == 0)
+          print("Leap Year");
+          
+      // Else If a year is multiple of 100,
+      // then it is not a leap year
+      else if ($year % 100 == 0)
+          print("Not a Leap Year");
+              
+      // Else If a year is multiple of 4,
+      // then it is a leap year
+      else if ($year % 4 == 0)
+          print("Leap Year");
+          
+      else
+          print("Not a Leap Year");
+    }
+  
+  // Driver code
+  $year = 2003;
+  
+  checkYear($year);
+     
+// This code is contributed by ash264
+
+function is_leap_year($year){
+  if($year % 400 == 0){
+
+    echo "this is leap year";
+  }
+  elseif($year % 100 == 0){
+    echo "this is not leap year";
+  }
+  elseif($year % 4){
+    echo "this is leap year";
+  }
+  else{
+    echo "this is not leap year";
+  }
+}
+
 
     echo (abs(-7)."<br>"); 
     echo (ceil(5.5)."<br>");
