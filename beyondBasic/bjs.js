@@ -118,10 +118,97 @@
 // console.log(myTotal)
 
 // 12... declare an object and change any property of that object
-let products = [
-    {name: 'laptop', price: 43000},
-    {name: 'shirt', price: 500, quantity: 3},
-];
+// let products = [
+//     {name: 'laptop', price: 43000},
+//     {name: 'shirt', price: 500, quantity: 3},
+// ];
 
-products.price = 12000;
-console.log(products)
+// products.price = 12000;
+// console.log(products)
+
+
+
+
+
+
+
+
+// // 1.. conversion
+// function feetToInch(feet){
+//     var inch = feet / 12;
+//     return inch;
+// }
+// console.log(feetToInch(12))
+
+
+// // 2.. conversion
+// function CMtoM(CM){
+//     var meter = CM / 100;
+//     return meter;
+// }
+// console.log(CMtoM(1200))
+
+
+// // 3.. calculation
+// function pageRequiirements(book1, book2, book3){
+//     const b1Page = 100;
+//     const b2Page = 200;
+//     const b3Page = 300;
+//     const b1Total = b1Page * book1;
+//     const b2Total = b2Page * book2
+//     const b3Total = b3Page * book3
+//     const totalPages = b1Total + b2Total + b3Total;
+//     return totalPages;
+// }    
+// const pagesForProject = pageRequiirements(5, 3, 1);
+// console.log(pagesForProject);
+
+
+// // 4.. (6 min)
+// const strings = ['abdul', 'abhijit', 'shimanto', 'shharaj', 'abulkalahhm'];
+
+// function bestFriend(array) {
+//     let result = '';
+//     for (i = 1; i < array; i++){
+//         let currentItem = array[i];
+//         if(currentItem.length > result.length){
+//             result = array[i];
+//         }
+//     }
+//     return result;
+// }
+// console.log(bestFriend(strings))
+
+
+// 5.. will stop the loop if the array has any negative numer and returns all the positive number before the negative numbers
+
+// একটা array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হচ্ছে সংখ্যা গুলা একটার পর একটা করে চেক করা। এবং সংখ্যা গুলা যদি পজিটিভ সংখ্যা হয়। অর্থাৎ শূন্য এর চাইতে বড় হয় তাহলে সেগুলাকে কোন একটা array এর মধ্যে রাখবে। আর যদি নেগেটিভ সংখ্যা হয়। তাহলে লুপটা স্টপ করে দিবে। এবং লুপ বন্ধ করার আগ পর্যন্ত যতগুলা পজিটিভ সংখ্যা পাওয়া গেছে। সেগুলা রিটার্ন করে দিবে। 
+
+// let numbers =[1, 6, 5, 0, 6, -6, 7]
+// let positive = [];
+// function onlyPositive(){
+//     for(let i = 0; i < numbers.length; i++){
+//         if (numbers[i] >= 0){
+//             positive.push(numbers[i]);
+//         } 
+//         else break;
+//     }
+//     return positive;
+// }
+// let mynum = onlyPositive(positive);
+// console.log(mynum);
+
+
+
+var numbers =[1, 6, 9, 0, 6, -6, 9];
+
+var positiveArr = [];
+
+numbers.forEach(function(item) {
+    if (numbers[i] > 0) {
+        positiveArr.push(item);
+    } 
+    
+});
+
+console.log(positiveArr) 
