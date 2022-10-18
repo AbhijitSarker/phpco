@@ -9,6 +9,8 @@ function addition() {
 addition();
 echo $z;
 ?>
+
+//globals and superglobals
 <!-- $GLOBALS
 $_SERVER
 $_REQUEST
