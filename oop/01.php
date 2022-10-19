@@ -24,8 +24,8 @@ class Dog{
 }
 
 
-$h1 = new Human();
-$h2 = new Human();
+// $h1 = new Human("");
+// $h2 = new Human("");
 
 $h1-> name ="rubel"; //set
 $h2->name = "hasin";
