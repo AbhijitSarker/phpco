@@ -1,6 +1,6 @@
 <?php
 class fund{
-    public $fund;
+    private $fund;
     function __construct($initialFund){
         $this->fund = $initialFund;
     }
@@ -12,6 +12,7 @@ class fund{
     public function deductFund($money){
         $this->fund -= $money;
     }
+    
     public function getTotal(){
         echo "Total fund is {$this->fund}\n";
     }
@@ -20,5 +21,5 @@ class fund{
 $ourFund = new Fund(100);
 $ourFund -> getTotal();
 $ourFund -> addFund(10);
-$ourFund -> deductFund(7);
+$ourFund -> deductFund(5);
 $ourFund -> getTotal();
