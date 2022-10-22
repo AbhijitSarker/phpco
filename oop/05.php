@@ -1,4 +1,4 @@
-<?php
+<?php //inheritance
 class Animal
 {   
     protected $name;
