@@ -1,4 +1,4 @@
-<?php 
+<?php /* 
 class Human{
     public $name;
     public $age;
@@ -34,4 +34,4 @@ $h2->sayHi();
 $h2->sayName();
 echo "<br>";
 $h3->sayHi();
-$h3->sayName();
+$h3->sayName(); 

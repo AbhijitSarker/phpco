@@ -1,5 +1,5 @@
 <?php
-class RGB
+class RGB //get rgb color
 {
     private $color; //#ff0000
     private $red;
