@@ -1,24 +1,37 @@
 <?php
-class RGB{
+class RGB
+{
     private $color; //#ff0000
     private $red;
     private $green;
     private $blue;
 
-    function __construct($colorCode = ''){
-        $this->color = ltrim("#",$colorCode);
+    function __construct($colorCode = '')
+    {
+        $this->color = ltrim($colorCode, "#");
     }
 
-    function getColor(){
+    function getColor()
+    {
         return $this->color;
     }
 
-    function setColor($colorCode){
-        $this->color = ltrim("#",$colorCode);
+    function setColor($colorCode)
+    {
+        $this->color = ltrim($colorCode, "#");
+        $this->parseColor();
     }
 
-    function parseColor(){
-        $colors = sscanf($this->color, '%02x02x02x');
-        print_r($color);
+    private function parseColor()
+    {
+        if($this->color){
+            list($this->red, $this->green, $blue) = sscanf($this->color, '%02x%02x%02x');
+            echo $this->red;
+            echo $this->green;
+            echo $this->blue;
+        }   
+
     }
 }
+echo "running";
+$myColor = new RGB("#ffef27");
