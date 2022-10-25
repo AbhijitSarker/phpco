@@ -4,7 +4,7 @@ class ParentClass{
     function __construct($name)
     {
         $this->name = $name;
-        $this->sayHi();
+        $this->sayHi2();
     }
 
     function sayHi2(){
