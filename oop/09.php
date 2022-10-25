@@ -1,7 +1,8 @@
 <?php
-class Shape{
-    function getArea(){}
-    function getPerimeter(){}
+
+abstract class Shape{
+    abstract function getArea();
+    abstract function getPerimeter();
 }
 
 class Rectangle extends Shape{
@@ -11,13 +12,35 @@ class Rectangle extends Shape{
         $this->base =$base;
         $this->height =$height;
     }
-    public setBase($base){
+    public function setBase($base){
         $this->base =$base;
     }
-    public setHeight($height){
+    
+    public function setHeight($height){
         $this->height =$height;
     }
+
     function getArea(){
-        return
+        return $this->base * $this->height;
     }
+
+    function getPerimeter(){
+        return 2*($this->base + $this->height);
+    }
+
+
 }
+
+ class Triangle extends Shape{
+    function getArea(){
+        return $this->base * $this->height;
+    }
+
+    function getPerimeter(){
+        
+    }
+ }
+
+$tri = new Rectangle(4,5);
+echo $tri->getArea();
+
