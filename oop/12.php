@@ -15,12 +15,7 @@ interface BaseHuman extends BaseAnimal{
     function canTalk();
 }
 
-class Human implements BaseHuman{
-    function isAlive(){}
-    function canEat($param1, $param2){}
-    function breed(){}
-    function canTalk(){}
-}
+
 
 $cat = new Animal();
 echo $cat instanceof Human;
@@ -29,3 +24,17 @@ echo $cat instanceof Human;
 // $h = new Human();
 // echo $h instanceof BaseHuman;
 
+abstract class AbstracatHuman implements BaseHuman{
+    abstract public function run();
+    function eat(){
+        echo "I am eating";
+    }
+}
+
+class Human extends AbstracatHuman{
+    function isAlive(){}
+    function canEat($param1, $param2){}
+    function breed(){}
+    function canTalk(){}
+    function run(){}
+}
